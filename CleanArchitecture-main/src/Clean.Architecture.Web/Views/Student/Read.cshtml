@@ -1,0 +1,40 @@
+﻿@model StudentListResponse
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1 class="bg-info text-white">Students</h1>
+<a asp-action="Create" class="btn btn-secondary">Create a Student</a>
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Standard</th>
+        <th>Rank</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var s in Model.Student)
+    {
+        <tr>
+            <td><a class="link-info" asp-action="ReadById" asp-route-id="@s.Id">@s.Id</a></td>
+            <td>@s.Name</td>
+            <td>@s.Standard</td>
+            <td>@s.Rank</td>
+            <td>
+                <a class="btn btn-sm btn-primary" asp-action="Update" asp-route-id="@s.Id">
+                    Update
+                </a>
+            </td>
+            <td>
+                <form asp-action="Delete" asp-route-id="@s.Id" method="post">
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>

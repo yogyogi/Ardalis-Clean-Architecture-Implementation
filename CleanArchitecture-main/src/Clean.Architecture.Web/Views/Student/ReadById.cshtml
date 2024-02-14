@@ -1,0 +1,27 @@
+﻿@model StudentRecord
+
+@{
+    ViewData["Title"] = "Student";
+}
+
+<h1 class="bg-info text-white">Student</h1>
+<a asp-action="Create" class="btn btn-secondary">Create a Student</a>
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <td class="bg-warning">Id</td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td class="bg-warning">Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td class="bg-warning">Standard</td>
+        <td>@Model.Standard</td>
+    </tr>
+    <tr>
+        <td class="bg-warning">Rank</td>
+        <td>@Model.Rank</td>
+    </tr>
+</table>

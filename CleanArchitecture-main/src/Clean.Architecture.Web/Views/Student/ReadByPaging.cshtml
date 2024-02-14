@@ -1,0 +1,63 @@
+﻿@model StudentPagingRecord
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<style>
+    .pagingDiv {
+        background: #f2f2f2;
+    }
+
+        .pagingDiv > a {
+            display: inline-block;
+            padding: 0px 9px;
+            margin-right: 4px;
+            border-radius: 3px;
+            border: solid 1px #c0c0c0;
+            background: #e9e9e9;
+            box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+            font-size: .875em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #717171;
+            text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+        }
+
+            .pagingDiv > a:hover {
+                background: #fefefe;
+                background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+                background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+            }
+
+            .pagingDiv > a.active {
+                border: none;
+                background: #616161;
+                box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+                color: #f0f0f0;
+                text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+            }
+</style>
+
+<h1 class="bg-info text-white">Students by Paging</h1>
+<a asp-action="Create" class="btn btn-secondary">Create a Student</a>
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Standard</th>
+        <th>Rank</th>
+    </tr>
+    @foreach (var s in Model.StudentList)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Name</td>
+            <td>@s.Standard</td>
+            <td>@s.Rank</td>
+        </tr>
+    }
+</table>
+ 
+<div class="pagingDiv" page-model="@Model.PI" page-action="ReadByPaging" page-classes-enabled="true" page-class="paging" page-class-selected="active"></div>
