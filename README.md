@@ -23,7 +23,26 @@ dotnet ef migrations add MIGRATIONNAME -c AppIdentityDbContext -p ../Clean.Archi
 dotnet ef database update --context AppIdentityDbContext
 ```
 
-   
+# User Interface
+Here we can perform CRUD Operations on a Student Entity.
+
+## Read Records
+
+<img src="Images/read.png" alt="read feature"  title="Read Feature">
+
+## Read Records by Paging
+
+<img src="Images/paging.png" alt="paging feature"  title="Paging Feature">
+
+## Login & Registration by ASP.NET Core Identity
+
+<img src="Images/login.png" alt="login feature"  title="Login Feature">
+
+<img src="Images/register.png" alt="register feature"  title="Register Feature">
+
+## Testing
+
+<img src="Images/test.png" alt="test feature"  title="Test Feature">
 
 ## Want to support me ?
 
