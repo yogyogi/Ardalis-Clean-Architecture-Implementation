@@ -1,5 +1,5 @@
 # Ardalis Clean Architecture Implementation
-This is the implementation of Clean Architecture by Steve "Ardalis" Smith. Here CRUD operations on a Student Entity is performed. The repository contains the following things:
+This is the implementation of Clean Architecture by Steve "Ardalis" Smith. Here CRUD operations on a Student Entity is performed. The complete tutorial is provided at - <a href="https://www.yogihosting.com">Implement Ardalis Clean Architecture</a>
 
 # Features
 1. ASP.NET Core 8.0 version.
@@ -49,5 +49,4 @@ Here we can perform CRUD Operations on a Student Entity.
 Your support of every $5 will be a great rewart for me to carry on my work. Thank you !
 
 <a href="https://www.buymeacoffee.com/YogYogi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200"  style="height: 60px !important;width: 200px !important;" ></a>
-
 <a href="https://www.paypal.com/paypalme/yogihosting" target="_blank"><img src="https://raw.githubusercontent.com/yogyogi/yogyogi/main/paypal.png" alt="Paypal Me" width="300"></a>
