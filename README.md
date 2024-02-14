@@ -10,15 +10,18 @@ This is the implementation of Clean Architecture by Steve "Ardalis" Smith. Here 
 6. Login, Logout, Register features in Razor Pages.
 7. Unit, Integration and Functional Tests.
 
-# Running in your PC
-1. Download the repository and run it. Then go to /Student/Read uri to start with the CRUD operations. 
+# Getting Started
+1. Simply Download the run the repository. Then go to `/Student/Read` uri to start with the CRUD operations. 
 2. For Identity you have to perform migrations. This will create Identity database.
 Go to the directory of "Web" project where their is `Clean.Architecture.Web.csproj`. From here run the migration commands.
 
+```sh
+dotnet ef migrations add MIGRATIONNAME -c AppIdentityDbContext -p ../Clean.Architecture.Infrastructure/Clean.Architecture.Infrastructure.csproj -s Clean.Architecture.Web.csproj -o Data/Migrations
+```
 
-`dotnet ef migrations add MIGRATIONNAME -c AppIdentityDbContext -p ../Clean.Architecture.Infrastructure/Clean.Architecture.Infrastructure.csproj -s Clean.Architecture.Web.csproj -o Data/Migrations`
-
-`dotnet ef database update --context AppIdentityDbContext`
+```sh
+dotnet ef database update --context AppIdentityDbContext
+```
 
    
 
