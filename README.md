@@ -44,6 +44,10 @@ Here we can perform CRUD Operations on a Student Entity.
 
 <img src="Images/test.png" alt="test feature"  title="Test Feature">
 
-## Want to support me ?
+## Support
+
+Your support of every $5 will be a great rewart for me to carry on my work. Thank you !
 
 <a href="https://www.buymeacoffee.com/YogYogi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200"  style="height: 60px !important;width: 200px !important;" ></a>
+
+<a href="https://www.paypal.com/paypalme/yogihosting" target="_blank"><img src="paypal.png" alt="Paypal Me" width="300"></a>
