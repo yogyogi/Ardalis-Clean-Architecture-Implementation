@@ -23,6 +23,10 @@ dotnet ef migrations add MIGRATIONNAME -c AppIdentityDbContext -p ../Clean.Archi
 dotnet ef database update --context AppIdentityDbContext
 ```
 
+You can make any action method of `StudentController.cs` as secured by adding `[Authorize]` attribute over it.
+
+Don't forget to view the connection string of Identity Database given on `appsettings.json` file on "Web" project.
+
 # User Interface
 Here we can perform CRUD Operations on a Student Entity.
 
