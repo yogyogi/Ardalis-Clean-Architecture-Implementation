@@ -1,5 +1,5 @@
 # Ardalis Clean Architecture Implementation
-This is the implementation of Clean Architecture by Steve "Ardalis" Smith. Here CRUD operations on a Student Entity is performed. The complete tutorial is provided at - <a href="https://www.yogihosting.com">Implement Ardalis Clean Architecture</a>
+This is the implementation of Clean Architecture by Steve "Ardalis" Smith. Here CRUD operations on a Student Entity is performed. The complete tutorial is provided at - <a href="https://www.yogihosting.com/aspnet-core-clean-architecuture-ardalis-steve-smith/">Implement Ardalis Clean Architecture</a>
 
 # Features
 1. ASP.NET Core 8.0 version.
